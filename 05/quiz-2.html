@@ -22,7 +22,37 @@
 			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
 			<hr>
 			<form>
-				
+				<fieldset> <!--fieldset이 아니라 그냥 h4 사용하면 됨.-->
+					<legend>개인 정보</legend>
+					<ul>
+						<li>
+							<label>이름 <input type="text" placeholder="공백 없이 입력하세요."></label>
+						</li>
+						<li>
+							<label>연락처 <input type="tel"></label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>지원 분야</legend>
+					<ul>
+						<li>
+							<label><input type="radio" name="field">웹 퍼블리싱</label>
+						</li>
+						<li>
+							<label><input type="radio" name="field">웹 애플리케이션 개발</label>
+						</li>
+						<li>
+							<label><input type="radio" name="field">개발 환경 개선</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>지원 동기</legend>
+					<textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+				</fieldset>
+				<button>접수하기</button>
+				<button type="reset">다시 쓰기</button>
 			</form>
 		</div>
   </body>

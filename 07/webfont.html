@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <title>웹 폰트 사용하기</title>
   <style>
-    /* Do it! 구글 폰트 사용하기 */
-
+    /* Do it! 구글 폰트 사용하기 :: @import 문은 CSS에서 가장 먼저 와야 한다. */
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap');
+    .html {
+      font-family: "Playwrite NZ Guides", cursive;
+    }
     body {
       background:url('images/bg.jpg') no-repeat fixed;
       background-size:cover;
@@ -19,7 +22,7 @@
 
 </head>
 <body>
-  <h1>HTML</h1>
+  <h1 class="html">HTML</h1>
   <h1>CSS</h1>
 </body>
 </html> 

@@ -4,19 +4,40 @@
 	<meta charset="UTF-8">
 	<title>연습문제</title>
   <style>
-  
+    table {
+      caption-side: bottom;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    caption {
+      text-align: right;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    th { text-align: center; }
+    td { text-align: right; }
+    .bg {
+      background: #e5f6f6
+    }
   </style>
 </head>
 <body>
   <table>
     <caption>출처: 통계청 100대 지표</caption>
+    <colgroup>
+      <col> <!--현재 1열은 나머지 2~4열과 다른 디자인이 적용되어 있으므로 따로 둔다.-->
+      <col span="3"> <!--2,3,4열은 디자인의 차이가 없으므로 그냥 묶어도 된다.-->
+      <col class="bg"> <!--이게 5열이 된다.-->
+    </colgroup> <!--열을 기준으로 배경색 넣을거니 colgroup으로 묶는다.-->
     <thead>
       <tr>
         <th>지수</th>
         <th>2019</th>
         <th>2020</th>
         <th>2021</th>
-        <th>2022</th>
+        <th >2022</th>
       </tr>
     </thead>
     <tbody>
@@ -25,14 +46,14 @@
         <td>20,891,348</td>
         <td>21,484,785</td>
         <td>22,022,753</td>
-        <td>22,383,187</td>
+        <td >22,383,187</td>
       </tr>
       <tr>
         <th>1인 가구 수</th>
         <td>6,147,516</td>
         <td>6,643,354</td>
         <td>7,165,788</td>
-        <td>7,502,350</td>
+        <td >7,502,350</td>
       </tr>
     </tbody>
   </table>

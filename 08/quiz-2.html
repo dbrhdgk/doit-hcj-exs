@@ -16,7 +16,7 @@
     .title-text {
       text-align: center;
     }
-    .title-text > h2 {
+    .title-text > h2 { /*A>B 자식선택자(child selector): A요소의 직계자식 B만.*/
       font-size: 2.5em;
       color: #919191;
     }
@@ -27,16 +27,29 @@
     .travel-list {
       padding-top: 20px;      
     }    
-    .travel-card img {
+    .travel-card {
+      width: 250px;
+      height: 340px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      padding: 10px;
+      float: left;
+      margin-right: 20px;
+      text-align: center; /*카드의 모든 요소를 가운데 정렬하고 싶은 거니까*/
+    }
+    .travel-card img { /*A B 후손선택자(descendent selector): A요소의 모든 하위 요소 중 자식 B.*/
       width: 150px;
       height: 150px;
       margin: 15px;
+      border-radius: 50%;
     }
     .travel-card p {
       font-size: 16px;
+      /* text-align: center; */
     }
   </style>
 </head>
+
 <body>
   <div id="travel">
     <div class="title-text">
